@@ -1,0 +1,139 @@
+/* # Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Karla", sans-serif;
+  font-size: 16px;
+}
+
+.supercontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  background-color: #e5eff5;
+}
+
+.container {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.header {
+  background-color: white;
+  min-height: 250px;
+  padding: 20px;
+}
+.header__title {
+  color: #2ab2af;
+  font-size: 24px;
+  margin: 25px 0;
+}
+.header__subtitle {
+  color: #c0df34;
+  margin-bottom: 10px;
+}
+.header__intro {
+  color: #98a6bd;
+  line-height: 24px;
+}
+
+.price {
+  background-color: #27a5a3;
+  color: #e5eff5;
+  min-height: 180px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  padding: 20px;
+}
+.price__title {
+  font-weight: 700;
+}
+.price__amount {
+  color: #e5eff5;
+  line-height: 24px;
+  font-weight: 700;
+}
+.price__amount-value {
+  font-size: 24px;
+  color: white;
+}
+.price__sign-up {
+  background-color: #c0df34;
+  width: 85%;
+  height: 45px;
+  border-radius: 10px;
+  border: none;
+  align-self: center;
+  color: white;
+}
+
+.about {
+  background-color: #2bb6b3;
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.about__title {
+  font-weight: 700;
+  font-size: 19.2px;
+  margin-bottom: 20px;
+}
+.about__list {
+  list-style: none;
+}
+.about__list-item {
+  margin: 2px 0;
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    display: grid;
+    justify-content: center;
+    grid: "header header" 25vh "price about" 35vh/25vw 25vw;
+  }
+
+  .header {
+    grid-area: header;
+    padding: 0 40px;
+  }
+
+  .price {
+    grid-area: price;
+    padding: 40px;
+  }
+
+  .about {
+    grid-area: about;
+    padding: 35px 50px;
+  }
+}
+.attribution {
+  background-color: #e5eff5;
+  text-align: center;
+}
+.attribution a, .attribution a:visited {
+  text-transform: uppercase;
+  color: #2ab2af;
+}
