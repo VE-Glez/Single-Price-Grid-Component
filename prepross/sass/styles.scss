@@ -92,7 +92,7 @@
   padding: 20px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-evenly;
 
   &__title{
     font-weight: $Weight2;
@@ -114,8 +114,8 @@
   .container{
     display: grid;
     justify-content: center;
-    grid: "header header" 25vh
-          "price about" 35vh / 25vw 25vw;
+    grid: "header header" 250px
+          "price about" 300px / 25vw 25vw;
   }
 
   .header{
